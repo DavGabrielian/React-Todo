@@ -5,7 +5,7 @@ import SearchPanel from "../search-panel";
 import TodoList from "../todo-list";
 import ItemStatusFilter from "../item-status-filter";
 import ItemAddForm from "../item-add-form";
-
+import FFooter from "../footer/footer"
 import "./app.css";
 
 export default class App extends Component {
@@ -147,6 +147,7 @@ export default class App extends Component {
         {/* <span>{new Date().toString()}</span> */}
 
         <ItemAddForm onItemAdded={this.addItem} />
+        <FFooter/>
       </div>
     );
   }
